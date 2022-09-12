@@ -37,8 +37,23 @@ p {
   display: grid;
   gap: 1rem;
 }
+.new1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
 
 .trends {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.new2 {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -52,6 +67,17 @@ p {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
+  .new2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .new2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 @media (min-width: 900px) {
   .cards {
@@ -61,6 +87,12 @@ p {
 @media (max-width: 550px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .new2 {
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -74,13 +106,11 @@ p {
 .blog-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .blog-container_groupB {
   flex: 1;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   grid-auto-rows: minmax(100px, auto);
@@ -102,7 +132,7 @@ p {
 
 @media screen and (max-width: 700px) {
   .blog-container_groupB {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .blog-container_article {

@@ -63,8 +63,8 @@ const Header = () => {
       <hr />
 
       {/* my main items section  */}
-      <div className='blog section__padding' id='blog'>
-        <div className='blog-container'>
+      <div className='new1' id='blog'>
+        <div className='new2'>
           {items.map((elem) => {
             const { id, title, image, owner, hashcode } = elem
 
@@ -82,6 +82,10 @@ const Header = () => {
           })}
         </div>
       </div>
+      <hr />
+      <h1 className='mt-5 text-center main-heading '>
+        @BrewApps Assignment. Sharma Ketan
+      </h1>
     </>
   )
 }
